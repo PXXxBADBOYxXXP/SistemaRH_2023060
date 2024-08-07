@@ -29,8 +29,7 @@ public class VacantesService implements IVacantesService {
 
     @Override
     public void eliminarVacantes(Vacantes vacantes) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'eliminarVacantes'");
+        vacantesRepositorio.delete(vacantes);
     }
 
 }
