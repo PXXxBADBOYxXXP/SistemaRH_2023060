@@ -26,8 +26,7 @@ public class EmpleadosService implements IEmpleadosService{
 
     @Override
     public Empleados guardarEmpleados(Empleados empleados) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'guardarEmpleados'");
+        return empleadosRepositorio.save(empleados);
     }
 
     @Override
