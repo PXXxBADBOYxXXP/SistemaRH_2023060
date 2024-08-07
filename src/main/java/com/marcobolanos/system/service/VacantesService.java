@@ -24,8 +24,7 @@ public class VacantesService implements IVacantesService {
 
     @Override
     public Vacantes guardarVacantes(Vacantes vacantes) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'guardarVacantes'");
+        return vacantesRepositorio.save(vacantes);
     }
 
     @Override
