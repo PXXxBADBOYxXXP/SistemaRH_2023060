@@ -13,7 +13,7 @@ public class VacantesService implements IVacantesService {
     private VacantesRepositorio vacantesRepositorio;
     @Override
     public List<Vacantes> listarVacantes() {
-        
+        return vacantesRepositorio.findAll();
     }
 
     @Override
