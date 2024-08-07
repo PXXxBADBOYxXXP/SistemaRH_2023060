@@ -20,8 +20,8 @@ public class EmpleadosService implements IEmpleadosService{
 
     @Override
     public Empleados buscarEmpleados(Integer idEmpleado) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buscarEmpleados'");
+        Empleados empleados = empleadosRepositorio.findById(idEmpleado).orElse(null);
+        return empleados;
     }
 
     @Override
