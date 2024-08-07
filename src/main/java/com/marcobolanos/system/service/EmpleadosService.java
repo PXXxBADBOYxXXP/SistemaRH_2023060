@@ -1,5 +1,8 @@
 package com.marcobolanos.system.service;
 
-public class EmpleadosService {
 
+
+public class EmpleadosService implements IEmpleadosService{
+
+    
 }
