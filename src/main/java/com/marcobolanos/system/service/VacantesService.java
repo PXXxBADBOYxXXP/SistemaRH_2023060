@@ -18,8 +18,8 @@ public class VacantesService implements IVacantesService {
 
     @Override
     public Vacantes buscarVacantes(Integer idVacantes) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buscarVacantes'");
+       Vacantes vacantes = vacantesRepositorio.findById(idVacantes).orElse(null);
+       return vacantes;
     }
 
     @Override
