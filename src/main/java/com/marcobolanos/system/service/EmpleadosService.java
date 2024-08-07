@@ -31,8 +31,7 @@ public class EmpleadosService implements IEmpleadosService{
 
     @Override
     public void eliminarEmpleados(Empleados empleados) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'eliminarEmpleados'");
+        empleadosRepositorio.delete(empleados);
     }
 
     
