@@ -1,5 +1,9 @@
 package com.marcobolanos.system.repository;
 
-public interface EmpleadosRepositorio {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.marcobolanos.system.model.Empleados;
+
+public interface EmpleadosRepositorio extends JpaRepository<Empleados, Integer> {
 
 }
