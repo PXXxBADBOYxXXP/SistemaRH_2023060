@@ -56,7 +56,7 @@ public class VacanteController {
         return ResponseEntity.ok(vacantes);
     }
 
-    
+
     @PutMapping("/vacantes/{id}")
         public ResponseEntity <Vacantes> editarVacantes (@PathVariable Integer id, @RequestBody Vacantes vacantesRecibidas){
             Vacantes vacantes = iVacantesService.buscarVacantes(id);
@@ -70,6 +70,7 @@ public class VacanteController {
             return ResponseEntity.ok(vacantes);
         }
     
+        
     @DeleteMapping("/vacantes/{id}")
     public ResponseEntity<Map<String, Boolean>> eliminarVacantes(@PathVariable Integer id){
         Vacantes vacantes = iVacantesService.buscarVacantes(id);
