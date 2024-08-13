@@ -45,7 +45,7 @@ public class VacanteController {
         return iVacantesService.guardarVacantes(vacantes);
     }
 
-    
+
      //http://localhost:8081/rh-vacante/vacantes/1
     @GetMapping("/vacantes/{id}")
         
@@ -56,6 +56,7 @@ public class VacanteController {
         return ResponseEntity.ok(vacantes);
     }
 
+    
     @PutMapping("/vacantes/{id}")
         public ResponseEntity <Vacantes> editarVacantes (@PathVariable Integer id, @RequestBody Vacantes vacantesRecibidas){
             Vacantes vacantes = iVacantesService.buscarVacantes(id);
