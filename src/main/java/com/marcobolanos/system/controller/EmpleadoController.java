@@ -62,7 +62,7 @@ public class EmpleadoController {
         return ResponseEntity.ok(empleados);
     }
 
-    
+
     @PutMapping("/empleados/{id}")
     public ResponseEntity <Empleados> editarEmpleados (@PathVariable Integer id, @RequestBody Empleados empleadosRecibido){
         Empleados empleados = iEmpleadosService.buscarEmpleados(id);
@@ -76,6 +76,7 @@ public class EmpleadoController {
         return ResponseEntity.ok(empleados);
     }
 
+    
     @DeleteMapping("/empleados/{id}")
     public ResponseEntity<Map<String, Boolean>> eliminarEmpleados(@PathVariable Integer id){
         Empleados empleados = iEmpleadosService.buscarEmpleados(id);
