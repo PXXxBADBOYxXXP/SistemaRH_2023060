@@ -51,7 +51,7 @@ public class EmpleadoController {
         return iEmpleadosService.guardarEmpleados(empleados);
     }
 
-    
+
     //http://localhost:8081/rh-empleado/empleados/1
     @GetMapping("/empleados/{id}")
 
@@ -62,6 +62,7 @@ public class EmpleadoController {
         return ResponseEntity.ok(empleados);
     }
 
+    
     @PutMapping("/empleados/{id}")
     public ResponseEntity <Empleados> editarEmpleados (@PathVariable Integer id, @RequestBody Empleados empleadosRecibido){
         Empleados empleados = iEmpleadosService.buscarEmpleados(id);
