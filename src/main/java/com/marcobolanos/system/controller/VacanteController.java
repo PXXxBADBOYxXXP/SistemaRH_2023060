@@ -28,6 +28,7 @@ public class VacanteController {
 
     @Autowired
     private IVacantesService iVacantesService;
+    
     //http://localhost:8081/rh-vacante/vacantes
     @GetMapping("/vacantes")
 
