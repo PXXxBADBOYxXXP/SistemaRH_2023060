@@ -43,7 +43,7 @@ public class EmpleadoController {
         return empleado2;
     }
 
-    
+
      //http://localhost:8081/rh-empleado/empleadosA
     @PostMapping("/empleadosA")
     public Empleados agregarEmpleados (@RequestBody Empleados empleados){
@@ -51,6 +51,7 @@ public class EmpleadoController {
         return iEmpleadosService.guardarEmpleados(empleados);
     }
 
+    
     //http://localhost:8081/rh-empleado/empleados/1
     @GetMapping("/empleados/{id}")
 
