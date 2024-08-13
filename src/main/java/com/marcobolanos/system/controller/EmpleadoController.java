@@ -35,6 +35,7 @@ public class EmpleadoController {
         return empleado2;
     }
 
+     //http://localhost:8081/rh-empleado/empleadosA
     @PostMapping("/empleadosA")
     public Empleados agregarEmpleados (@RequestBody Empleados empleados){
         logger.info("empleado agregado");
@@ -42,4 +43,5 @@ public class EmpleadoController {
     }
 
 
+    @GetMapping("/empleados")
 }
