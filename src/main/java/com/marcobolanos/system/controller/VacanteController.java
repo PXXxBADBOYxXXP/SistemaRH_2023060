@@ -37,7 +37,7 @@ public class VacanteController {
         vacante2.forEach((vacante ->  logger.info(vacante.toString())));
         return vacante2;
     }
-    
+
     //http://localhost:8081/rh-vacante/vacantesA
     @PostMapping("/vacantesA")
     public Vacantes agregarVacantes (@RequestBody Vacantes vacantes){
@@ -45,6 +45,7 @@ public class VacanteController {
         return iVacantesService.guardarVacantes(vacantes);
     }
 
+    
      //http://localhost:8081/rh-vacante/vacantes/1
     @GetMapping("/vacantes/{id}")
         
