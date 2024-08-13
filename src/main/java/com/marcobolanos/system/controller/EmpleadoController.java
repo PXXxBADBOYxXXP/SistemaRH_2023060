@@ -33,7 +33,7 @@ public class EmpleadoController {
     @Autowired
     private IEmpleadosService iEmpleadosService;
 
-    
+
     //http://localhost:8081/rh-empleado/empleados
     @GetMapping("/empleados")
 
@@ -43,6 +43,7 @@ public class EmpleadoController {
         return empleado2;
     }
 
+    
      //http://localhost:8081/rh-empleado/empleadosA
     @PostMapping("/empleadosA")
     public Empleados agregarEmpleados (@RequestBody Empleados empleados){
