@@ -28,7 +28,7 @@ public class VacanteController {
 
     @Autowired
     private IVacantesService iVacantesService;
-    
+
     //http://localhost:8081/rh-vacante/vacantes
     @GetMapping("/vacantes")
 
@@ -37,6 +37,7 @@ public class VacanteController {
         vacante2.forEach((vacante ->  logger.info(vacante.toString())));
         return vacante2;
     }
+    
     //http://localhost:8081/rh-vacante/vacantesA
     @PostMapping("/vacantesA")
     public Vacantes agregarVacantes (@RequestBody Vacantes vacantes){
